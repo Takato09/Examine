@@ -46,4 +46,4 @@ class DepositsListView(ListView):
 class GetDepositView(DetailView):
     template_name = 'detail.html'
     pk_url_kwarg = "user_id"
-    model = models.Deposit.objects.all()
+    model = Deposit
