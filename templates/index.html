@@ -10,7 +10,7 @@
         {% for deposit in object_list %}
 
             <li>
-                <a href="{% url 'index' deposit.pk %}">Deposit: {{ deposit.deposit }}<br>
+                <a href="{% url 'deposit' deposit.pk %}">Deposit: {{ deposit.deposit }}<br>
                 Term: {{ deposit.term }}<br>
                 Rate: {{ deposit.rate }}<br>
                 Interest: {{ deposit.interest }}</a>
